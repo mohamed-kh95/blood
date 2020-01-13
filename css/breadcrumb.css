@@ -1,0 +1,21 @@
+.breadcrumb {
+    margin-top: 10px;
+    background-color: #FFF!important;
+    border: 1px solid #DDD;
+}
+.breadcrumb .breadcrumb-item a {
+    color: #999;
+}
+.breadcrumb .breadcrumb-item.active {
+    color: #333;
+}
+@media (max-width: 992px) {
+    .custom-padding {
+        padding: 0px;
+    }
+}
+@media (max-width: 576px) {
+    .custom-padding {
+        padding: 0px 15px;
+    }
+}
