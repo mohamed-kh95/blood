@@ -83,7 +83,11 @@ footer .footer-img .img-content img {
 .copy .copy-icons {
     display: flex;
     justify-content: end;
-    
+}
+@media (max-width: 768px) {
+    .copy .copy-icons {
+        justify-content: center;
+    }
 }
 .copy .copy-icons .c-icon {
     color: #FFF;
