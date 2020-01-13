@@ -1,0 +1,293 @@
+/* Start Sign */
+.upper-bar .sign {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto!important;
+}
+.upper-bar .sign .signin a,
+.upper-bar .sign .signup a {
+    color: #db9535;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.upper-bar .sign .signup:hover a,
+.upper-bar .sign .signin:hover a {
+    color: var(--redColor);
+    transition: color .3s ease-in-out;
+}
+/* End Sign */
+/* Start Req Nav Button */
+
+.navbar .req-nav-btn {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+@media (max-width: 992px) {
+    .navbar .req-nav-btn {
+        padding-bottom: 10px;
+    }
+}
+.navbar .req-nav-btn .nav-btn a {
+    background-color: var(--mainColor);
+    color: #FFF;
+    padding: 5px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar .req-nav-btn .nav-btn:hover a {
+    background-color: var(--redColor);
+    transition: background-color .3s ease-in-out;
+}
+/* End Req Nav Button */
+
+/* Start Req */
+.req {
+    padding: var(--mainPadding);
+    background-color: var(--grayColor);
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+}
+.req .title .h3 {
+    color: var(--mainColor);
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--redColor);
+}
+/* Select */
+.req-select {
+    margin-bottom: 30px;
+}
+.req .choose-blood,
+.req .choose-city {
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.req .blood-content,
+.req .city-content {
+    position: absolute;
+    display: contents;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.req .blood-content .content,
+.req .city-content .content {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    border: 1px solid var(--mainColor);
+    border-radius: 50px;
+    cursor: pointer;
+    height: 50px;
+}
+.req .blood-content .content:hover i,
+.req .city-content .content:hover i {
+    color: var(--redColor);
+    transition: color .3s ease-in-out;
+}
+.req .main-item {
+    position: relative;
+    top: 20%;
+    padding: 0px 15px;
+    color: #777;
+    user-select: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.req .main-item i {
+    margin-top: 5px;
+    position: relative;
+}
+.req .main-item i:after {
+    position: absolute;
+    content: '';
+    top: -16px;
+    right: -15px;
+    width: 1px;
+    height: 50px;
+    background-color: #777;
+}
+.req .blood-content .items {
+    direction: ltr;
+    z-index: 11;
+}
+.req .city-content .items {
+    z-index: 10;
+}
+.req .blood-content .items,
+.req .city-content .items {
+    opacity: 0;
+    display: none;
+    position: relative;
+    top: 0;
+    background-color: #FFF;
+    margin-top: 30px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 20px 0px 10px;
+    font-size: 16px;
+}
+.req .blood-content .items:before,
+.req .city-content .items:before {
+    position: absolute;
+    top: -9px;
+    right: 20px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent ;
+    border-bottom: 10px solid #FFF;
+}
+.req .blood-content .items .item,
+.req .city-content .items .item {
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    color: var(--mainColor);
+}
+.req .items .item:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+.req .blood-content .items .item:hover,
+.req .city-content .items .item:hover {
+    background-color: var(--redColor);
+    color: #FFF;
+    transition: all .3s ease-in-out;
+}
+.req .req-submit {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.req .req-submit button {
+    background-color: #FFF;
+    border: 1px solid var(--mainColor);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+    color: #777;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .req .req-submit button {
+        display: block;
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+.req .req-submit button:hover {
+    background-color: var(--redColor);
+    border: 1px solid var(--redColor);
+    color: #FFF;
+    transition: all .3s ease-in-out;
+}
+.req-toggle {
+    transition: all .5s linear;
+    opacity: 1!important;
+    display: block!important;
+}
+/* Start Details */
+.details-row {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 0px 70px 70px 0px;
+
+}
+.details-m {
+    margin-bottom: 15px;
+}
+.details-m:last-of-type {
+    margin-bottom: 0px;
+}
+.details-center {
+    display: flex;
+    align-items: center;
+}
+.details-row .blood {
+    font-size: 30px;
+    color: var(--mainColor);
+    border-radius: 50%;
+    background-color: var(--grayColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .details-row {
+        border-radius: 0px 70px 0px 70px;
+    }
+    .details-row .info-details,
+    .details-row .details-btn {
+        margin-top: 10px;
+    }
+}
+.detalis-row .info-details {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+}
+.details-row .info-details .details-item {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.details-row .info-details .details-item:last-of-type {
+    margin-bottom: 0;
+}
+.details-row .info-details .details-item .title {
+    color: var(--mainColor);
+}
+.details-row .details-btn a {
+    padding: 15px 30px;
+    background-color: var(--grayColor);
+    color: var(--mainColor);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+.details-row .details-btn a:hover {
+    transition: all .3s ease-in-out;
+    background-color: var(--mainColor);
+    color: #FFF;
+}
+/* End Details */
+.req .more-details a {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--mainColor);
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+.req .more-details a:hover {
+    transition: all .3s ease-in-out;
+    background-color: var(--redColor);
+}
+/* End Req */
+/* Start Pagination */
+.pagination .page-link {
+    color: var(--mainColor);
+}
+.pagination .page-link:hover,
+.pagination .page-link.active {
+    background-color: var(--mainColor);
+    color: #FFF;
+}
+/* End Pagination */

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>بنك الدم</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css">
+    <!-- Upper Style -->
+    <link rel="stylesheet" href="css/upper.css">
+    <!-- Navbar Style -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Footer Style -->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Loading Style -->
+    <link rel="stylesheet" href="css/loading.css">
+    <!-- Breadcrumb Style -->
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <!-- Register Style -->
+    <link rel="stylesheet" href="css/req.css">
+</head>
+<body>
+    <!-- Start Upper Bar -->
+    <section class="upper-bar">
+        <div class="container custom-padding">
+            <div class="row">
+                <!-- Language -->
+                <div class="col-3 col-md-4 language d-flex align-items-center">
+                    <div class="lang">
+                        <span class="active ar">عربي</span><span class="en"><bdi>EN</bdi></span>
+                    </div>
+                </div>
+                <!-- Social Icons -->
+                <div class="d-none col-md-4 d-lg-flex align-items-center justify-content-center">
+                    <div class="social">
+                        <div class="icon _facebook">
+                            <a href=""><i class="fab fa-facebook-f fa-fw"></i></a>
+                        </div>
+                        <div class="icon _instagram">
+                            <a href=""><i class="fab fa-instagram fa-fw"></i></a>
+                        </div>
+                        <div class="icon _twitter">
+                            <a href=""><i class="fab fa-twitter fa-fw"></i></a>
+                        </div>
+                        <div class="icon _whatsapp">
+                            <a href=""><i class="fab fa-whatsapp fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="col-9 col-md-4 ml-auto d-flex align-items-center">
+                    <div class="sign">
+                        <div class="signup">
+                            <a href="register.html">انشاء حساب جديد</a>
+                        </div>
+                        <div class="signin">
+                            <a href="">الدخول</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Upper Bar -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logos/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">عن بنك الدم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">المقالات</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="req.html">طلبات التبرع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="req-nav-btn">
+                    <div class="nav-btn">
+                        <a href="">طلب التبرع</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <div class="container custom-padding">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">طلبات التبرع</li>
+              </ol>
+        </div>
+      </nav>
+    <!-- End Breadcrumb -->
+    <!-- Start Req -->
+    <div class="container">
+        <section class="req">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title text-center">
+                            <div class="h3">
+                                طلبات التبرع    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Req Select -->
+                    <div class="col-12 req-select">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <div class="choose-blood">
+                                    <div class="blood-content">
+                                        <div class="content">
+                                            <div class="main-item"><bdi>اختر فصيلة الدم</bdi><i class="fa fa-chevron-down"></i></div>
+                                            <div class="items">
+                                                <div class="item" data-val = 'o+'><bdi>O+</bdi></div>
+                                                <div class="item" data-val = 'o-'>O-</div>
+                                                <div class="item" data-val = 'b+'>B+</div>
+                                                <div class="item" data-val = 'b-'>B-</div>
+                                                <div class="item" data-val = 'a+'>A+</div>
+                                                <div class="item" data-val = 'a-'>A-</div>
+                                                <div class="item" data-val = 'a+'>AB+</div>
+                                                <div class="item" data-val = 'a-'>AB-</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="choose-city">
+                                    <div class="city-content">
+                                        <div class="content">
+                                            <div class="main-item"><bdi>اختر المدينة</bdi><i class="fa fa-chevron-down"></i></div>
+                                            <div class="items">
+                                                <div class="item" data-val = 'city1'>المنصورة</div>
+                                                <div class="item" data-val = 'city2'>القاهرة</div>
+                                                <div class="item" data-val = 'city3'>الاسكندرية</div>
+                                                <div class="item" data-val = 'city4'>طنطا</div>
+                                                <div class="item" data-val = 'city5'>الجيزة</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="req-submit">
+                                    <button><i class="fa fa-search fa-fw"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Req Select -->
+                    <!-- Start Details Row -->
+                    <div class="col-12 details-m">
+                        <div class="details-row">
+                            <div class="row">
+                                <!-- Blood -->
+                                <div class="col-12 col-md-3 col-lg-2 details-center">
+                                    <div class="blood"><bdi>A+</bdi></div>
+                                </div>
+                                <!-- Details -->
+                                <div class="col-12 col-md-6 col-lg-7 details-center">
+                                    <div class="info-details">
+                                        <p class="details-item"><span class="title">اسم الحالة : </span>احمد محمد احمد</p>
+                                        <p class="details-item"><span class="title">مستشفى : </span>القصر العينى</p>
+                                        <p class="details-item"><span class="title">المدينة : </span>المنصورة</p>
+                                    </div>
+                                </div>
+                                <!-- Detials Button -->
+                                <div class="col-12 col-md-3 details-center">
+                                    <div class="details-btn">
+                                        <a href="" class="details">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Details Row -->
+                    <!-- Start Details Row -->
+                    <div class="col-12 details-m">
+                        <div class="details-row">
+                            <div class="row">
+                                <!-- Blood -->
+                                <div class="col-12 col-md-3 col-lg-2 details-center">
+                                    <div class="blood"><bdi>AB+</bdi></div>
+                                </div>
+                                <!-- Details -->
+                                <div class="col-12 col-md-6 col-lg-7 details-center">
+                                    <div class="info-details">
+                                        <p class="details-item"><span class="title">اسم الحالة : </span>اسامة عبده</p>
+                                        <p class="details-item"><span class="title">مستشفى : </span>القصر العينى</p>
+                                        <p class="details-item"><span class="title">المدينة : </span>القاهرة</p>
+                                    </div>
+                                </div>
+                                <!-- Detials Button -->
+                                <div class="col-12 col-md-3 details-center">
+                                    <div class="details-btn">
+                                        <a href="" class="details">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Details Row -->
+                    <!-- Start Details Row -->
+                    <div class="col-12 details-m">
+                        <div class="details-row">
+                            <div class="row">
+                                <!-- Blood -->
+                                <div class="col-12 col-md-3 col-lg-2 details-center">
+                                    <div class="blood"><bdi>O+</bdi></div>
+                                </div>
+                                <!-- Details -->
+                                <div class="col-12 col-md-6 col-lg-7 details-center">
+                                    <div class="info-details">
+                                        <p class="details-item"><span class="title">اسم الحالة : </span>انور مجدي</p>
+                                        <p class="details-item"><span class="title">مستشفى : </span>القصر العينى</p>
+                                        <p class="details-item"><span class="title">المدينة : </span>الجيزة</p>
+                                    </div>
+                                </div>
+                                <!-- Detials Button -->
+                                <div class="col-12 col-md-3 details-center">
+                                    <div class="details-btn">
+                                        <a href="" class="details">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Details Row -->
+                    <!-- Start Details Row -->
+                    <div class="col-12 details-m">
+                        <div class="details-row">
+                            <div class="row">
+                                <!-- Blood -->
+                                <div class="col-12 col-md-3 col-lg-2 details-center">
+                                    <div class="blood"><bdi>B+</bdi></div>
+                                </div>
+                                <!-- Details -->
+                                <div class="col-12 col-md-6 col-lg-7 details-center">
+                                    <div class="info-details">
+                                        <p class="details-item"><span class="title">اسم الحالة : </span>محمود مسعد ابراهيم</p>
+                                        <p class="details-item"><span class="title">مستشفى : </span>القصر العينى</p>
+                                        <p class="details-item"><span class="title">المدينة : </span>طنطا</p>
+                                    </div>
+                                </div>
+                                <!-- Detials Button -->
+                                <div class="col-12 col-md-3 details-center">
+                                    <div class="details-btn">
+                                        <a href="" class="details">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Details Row -->
+                    <!-- Start Details Row -->
+                    <div class="col-12 details-m">
+                        <div class="details-row">
+                            <div class="row">
+                                <!-- Blood -->
+                                <div class="col-12 col-md-3 col-lg-2 details-center">
+                                    <div class="blood"><bdi>A+</bdi></div>
+                                </div>
+                                <!-- Details -->
+                                <div class="col-12 col-md-6 col-lg-7 details-center">
+                                    <div class="info-details">
+                                        <p class="details-item"><span class="title">اسم الحالة : </span>احمد محمد احمد</p>
+                                        <p class="details-item"><span class="title">مستشفى : </span>القصر العينى</p>
+                                        <p class="details-item"><span class="title">المدينة : </span>المنصورة</p>
+                                    </div>
+                                </div>
+                                <!-- Detials Button -->
+                                <div class="col-12 col-md-3 details-center">
+                                    <div class="details-btn">
+                                        <a href="" class="details">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Details Row -->
+                    <!-- Start Details Row -->
+                    <div class="col-12 details-m">
+                        <div class="details-row">
+                            <div class="row">
+                                <!-- Blood -->
+                                <div class="col-12 col-md-3 col-lg-2 details-center">
+                                    <div class="blood"><bdi>AB+</bdi></div>
+                                </div>
+                                <!-- Details -->
+                                <div class="col-12 col-md-6 col-lg-7 details-center">
+                                    <div class="info-details">
+                                        <p class="details-item"><span class="title">اسم الحالة : </span>اسامة عبده</p>
+                                        <p class="details-item"><span class="title">مستشفى : </span>القصر العينى</p>
+                                        <p class="details-item"><span class="title">المدينة : </span>القاهرة</p>
+                                    </div>
+                                </div>
+                                <!-- Detials Button -->
+                                <div class="col-12 col-md-3 details-center">
+                                    <div class="details-btn">
+                                        <a href="" class="details">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Details Row -->
+                    <!-- Start Details Row -->
+                    <div class="col-12 details-m">
+                        <div class="details-row">
+                            <div class="row">
+                                <!-- Blood -->
+                                <div class="col-12 col-md-3 col-lg-2 details-center">
+                                    <div class="blood"><bdi>O+</bdi></div>
+                                </div>
+                                <!-- Details -->
+                                <div class="col-12 col-md-6 col-lg-7 details-center">
+                                    <div class="info-details">
+                                        <p class="details-item"><span class="title">اسم الحالة : </span>انور مجدي</p>
+                                        <p class="details-item"><span class="title">مستشفى : </span>القصر العينى</p>
+                                        <p class="details-item"><span class="title">المدينة : </span>الجيزة</p>
+                                    </div>
+                                </div>
+                                <!-- Detials Button -->
+                                <div class="col-12 col-md-3 details-center">
+                                    <div class="details-btn">
+                                        <a href="" class="details">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Details Row -->
+                    <!-- Start Pag -->
+                    <div class="col-6 m-auto">
+                        <nav aria-label="Page navigation example" class="d-flex justify-content-center" >
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Pag -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Req -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="icon">
+                        <img src="img/logos/logo.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="h4">بنك الدم</div>
+                        <p>عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul class="links list-unstyled">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="">عن بنك الدم</a></li>
+                        <li><a href="">المقالات</a></li>
+                        <li><a class="active" href="req.html">طلبات التبرع</a></li>
+                        <li><a href="">من نحن</a></li>
+                        <li><a href="">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 text-right">
+                    <div class="on">
+                        <div class="h6">متوفر على</div>
+                        <div class="footer-img ml-auto">
+                            <a class="img-content" href="">
+                                <img src="img/footer/ios1.png" alt="">
+                            </a>
+                            <a class="img-content" href="">
+                                <img src="img/footer/google1.png" alt="">
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Copyright -->
+    <section class="copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 align-icons ">
+                    <div class="copy-icons">
+                        <div class="c-icon"><i class="fab fa-facebook-f fa-fw"></i></div>
+                        <div class="c-icon"><i class="fab fa-instagram fa-fw"></i></div>
+                        <div class="c-icon"><i class="fab fa-twitter fa-fw"></i></div>
+                        <div class="c-icon"><i class="fab fa-whatsapp fa-fw"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="copy-text text-center text-md-right">
+                        <p>جميع الحقوق محفوظة لـ <span>بنك الدم</span> <bdi>&copy; 2019</bdi></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Copyright -->
+    <!-- Start Scroll To Top -->
+    <div class="to-top">
+        <i class="fa fa-chevron-circle-up fa-2x fa-fw"></i>
+    </div>
+    <!-- End Scroll To Top -->
+    <!-- Start Loading -->
+    <div class="loading-override">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    </div>
+    <!-- End Loading -->
+  
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/req.js"></script>
+</body>
+</html>
