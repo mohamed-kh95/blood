@@ -55,4 +55,20 @@ $(function () {
     // Details Blood
     $('.details-row .blood').innerHeight($('.details-row .info-details').innerHeight());
     $('.details-row .blood').innerWidth($('.details-row .info-details').innerHeight());
+    // Scroll To Top
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() >= 800) {
+        $(".to-top").fadeIn(500);
+        } else {
+        $(".to-top").fadeOut(500);
+        }
+    });
+    $(".to-top").on("click", function() {
+        $("html").animate(
+        {
+            scrollTop: 0
+        },
+        1500
+        );
+    });
 });
