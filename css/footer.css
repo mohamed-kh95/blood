@@ -1,0 +1,103 @@
+:root {
+    --mainColor : #2d3e50;
+    --redColor : #e21f25;
+    --mainPadding : 50px 0px;
+    --grayColor: #f5f5f5;
+}
+footer {
+    background-color: #1a1f25;
+    padding: var(--mainPadding);    
+}
+footer .icon {
+    height: 60px;
+    width: 150px;
+}
+footer .icon img {
+    height: 100%;
+    width: 100%;
+}
+footer .text {
+    margin-top: 10px;
+}
+footer .text .h4 {
+    color: var(--redColor);
+    font-weight: bold;
+}
+footer .text p {
+    color: #FFF;
+}
+footer .links {
+    line-height: 2.2;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    footer .links {
+        text-align: right;
+    }
+    
+}
+footer .links li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+}
+footer .links li a.active {
+    color: var(--redColor);
+    font-weight: bold;
+}
+footer .on {
+    margin-top: 7px;
+    display: inline-block;
+}
+
+
+footer .on .h6 {
+    color: var(--redColor);
+    font-weight: bold;
+    text-align: right;
+}
+footer .footer-img {
+    max-width: 150px;
+}
+footer .footer-img .img-content {
+    display: block;
+    margin-bottom: 10px;
+}
+footer .footer-img .img-content:hover {
+    transition: all .3s ease-in-out;
+    background-color: #FFF;
+}
+footer .footer-img .img-content img {
+    width: 100%;
+    height: 100%;
+}
+/* Start Copy */
+.copy {
+    background-color: #14171c;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+.copy .align-icons {
+    margin: auto 0;
+}
+.copy .copy-icons {
+    display: flex;
+    justify-content: end;
+    
+}
+.copy .copy-icons .c-icon {
+    color: #FFF;
+    margin-left: 12px;
+}
+.copy .copy-text {
+    color: #FFF;
+}
+.copy .copy-text p {
+    margin: 0;
+}
+.copy .copy-text span {
+    display: inline-block;
+    color: var(--redColor);
+    font-weight: bold;
+}
+/* End Copy */

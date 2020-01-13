@@ -1,0 +1,58 @@
+$(function () {
+    // Header
+    $('header').innerHeight($('.carousel').innerHeight() - 200);
+    
+    // Owl Carousel
+    $('.owl-carousel').owlCarousel({
+        rtl:true,
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600: {
+                items: 1
+            },
+            750:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+    // Card
+    $('.card .icon').on('click', function () {
+        $(this).toggleClass('like');
+    });
+    // Req
+    $('.req .choose-blood, .req .choose-city').on('click', function (e) {
+        e.stopPropagation();
+        if($(this).find('.items').hasClass('req-toggle')) {
+            $(this).find('.items').toggleClass('req-toggle');
+        } else {
+            $('.req .items').removeClass('req-toggle');
+            $(this).find('.items').toggleClass('req-toggle');
+        }
+    });
+    
+    $('body').on('click', function () {
+        $('.req .items').removeClass('req-toggle');
+    });
+    $(window).on('scroll', function () {
+        if($('.req .items').hasClass('req-toggle')) {
+            $('.req .items').removeClass('req-toggle')
+        }
+    });
+    // Req Items
+    $('.req .item').on('click', function () {
+        $(this).parent('.items').siblings().find('bdi').text($(this).text())
+    });
+    // Details Blood
+    $('.details-row .blood').innerHeight($('.details-row .info-details').innerHeight());
+    $('.details-row .blood').innerWidth($('.details-row .info-details').innerHeight());
+});

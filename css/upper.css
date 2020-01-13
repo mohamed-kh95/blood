@@ -1,0 +1,81 @@
+/* Start Upper Bar */
+.upper-bar {
+    padding: 5px 0px;
+    background-color: var(--mainColor);
+    font-size: 13px;
+}
+
+.upper-bar .lang > span {
+    color: #50667d;
+    padding: 0px 5px;
+}
+.upper-bar .lang > span:nth-of-type(even) {
+    border-right: 1px solid #50667d
+}
+.upper-bar .lang .active {
+    color: #bb2a39;
+}
+.upper-bar .social {
+    display: flex;
+    justify-content: center;
+}
+.upper-bar .social .icon {
+    padding: 0px 5px;
+}
+.upper-bar .social .icon a {
+    color: #FFF;
+    text-decoration: none;
+    
+}
+.upper-bar .social .icon a i {
+    font-size: 18px;
+    
+}
+._facebook:hover a {
+   color: #39569c!important; 
+   transition: color .8s ease-in-out
+}
+._instagram:hover i {
+    color: #FD1D1D;
+    transition: color .8s ease-in-out
+}
+._twitter:hover i {
+    color: #00acee;
+    transition: color .8s ease-in-out
+}
+._whatsapp:hover i {
+    color: #4AC959;
+    transition: color .8s ease-in-out
+}
+.info {
+    direction: ltr;
+    display: flex;
+    align-items: flex-start
+}
+.info > div {
+    padding: 0px 5px;
+    color: #FFF;
+}
+.info > div:nth-of-type(even) {
+    border-left: 1px solid #50667d
+}
+.info > div span {
+    white-space: nowrap
+}
+@media (max-width: 576px) {
+    .upper-bar .language {
+        display: flex;
+        align-items: center;
+    }
+    .info {
+        flex-flow: column;
+        
+    }
+    .info > div {
+        padding: 0;
+    }
+    .info > div:nth-of-type(even) {
+        border: none;
+    }
+}
+/* End Upper Bar */
