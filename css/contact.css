@@ -1,0 +1,153 @@
+/* Start Sign */
+.upper-bar .sign {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto!important;
+}
+.upper-bar .sign .signin a,
+.upper-bar .sign .signup a {
+    color: #db9535;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.upper-bar .sign .signup:hover a,
+.upper-bar .sign .signin:hover a {
+    color: var(--redColor);
+    transition: color .3s ease-in-out;
+}
+/* End Sign */
+/* Start Req Nav Button */
+
+.navbar .req-nav-btn {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+@media (max-width: 992px) {
+    .navbar .req-nav-btn {
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+}
+.navbar .req-nav-btn .nav-btn a {
+    background-color: var(--mainColor);
+    color: #FFF;
+    padding: 5px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar .req-nav-btn .nav-btn:hover a {
+    background-color: var(--redColor);
+    transition: background-color .3s ease-in-out;
+}
+/* End Req Nav Button */
+/* Start Contact Us */
+.contact-us {
+    padding: 20px 0px;
+}
+.contact-us .contact-title {
+    background-color: var(--mainColor);
+    color: #FFF;
+    padding: 10px;
+}
+.contact-us .contact,
+.contact-us .contact-info {
+    border: 1px solid #DDD;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact-us .contact-info {
+    padding: 0px;
+}
+.contact-us .contact-info .contact-img {
+    padding: 20px 0px;
+}
+.contact-us .contact-info .contact-img img {
+    max-width: 100%;
+}
+.contact-us ._info {
+    border-top: 1px solid #DDD;
+    padding: 10px;
+}
+.contact-us ._info ._content {
+    color: var(--mainColor);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.contact-us .social {
+    padding: 10px;
+}
+.contact-us .social ._title {
+    color: var(--redColor);
+}
+.contact-us .icon a {
+    padding: 3px;
+    color: #FFF;
+}
+.contact-us .__facebook {
+    background-color: #3a549f;
+}
+.contact-us .__twitter {
+    background-color: #50abf1;
+}
+.contact-us .__instagram {
+    background-color: #c535a4;
+}
+.contact-us .__whatsapp {
+    background-color: #12c826;
+}
+.contact-us .__youtube {
+    background-color: #dd472f;
+}
+.contact-us .__google {
+    background-color: #de4b39;
+}
+/* Start Sign In */
+form fieldset {
+    border: 1px solid #DDD;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+}
+form .form-logo {
+    width: 200px;
+}
+form .form-logo img {
+    width: 100%;
+}
+
+form .form-content textarea {
+    resize: none;
+    height: 70px;
+}
+form .form-content .form-control:focus {
+    outline: none;
+    border-color: #DDD;
+    box-shadow: none;
+}
+form .form-content input::placeholder,
+form .form-content textarea::placeholder {
+    color: #999;
+}
+form .submit,
+form .submit:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #3ab54a;
+    color: #FFF!important;
+    cursor: pointer;
+    margin-top: 15px;
+}
+form .submit.send {
+    background-color: var(--mainColor);
+}
+form .submit:hover {
+    transition: all .3s ease-in-out;
+    background-color: var(--redColor);
+}
+
+/* End Contact Us */

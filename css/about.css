@@ -1,0 +1,64 @@
+/* Start Sign */
+.upper-bar .sign {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto!important;
+}
+.upper-bar .sign .signin a,
+.upper-bar .sign .signup a {
+    color: #db9535;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.upper-bar .sign .signup:hover a,
+.upper-bar .sign .signin:hover a {
+    color: var(--redColor);
+    transition: color .3s ease-in-out;
+}
+/* End Sign */
+/* Start Req Nav Button */
+
+.navbar .req-nav-btn {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+@media (max-width: 992px) {
+    .navbar .req-nav-btn {
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+}
+.navbar .req-nav-btn .nav-btn a {
+    background-color: var(--mainColor);
+    color: #FFF;
+    padding: 5px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar .req-nav-btn .nav-btn:hover a {
+    background-color: var(--redColor);
+    transition: background-color .3s ease-in-out;
+}
+/* End Req Nav Button */
+/* Start About */
+.about-content {
+    padding: 20px 10px;
+    border: 1px solid #DDD;
+    margin-bottom: 20px;
+}
+.about .about-img {
+    margin-bottom: 20px!important;
+}
+.about .about-img img {
+    max-width: 100%;
+}
+.about .about-text {
+    line-height: 2;
+    color: #555;
+}
+/* End About */

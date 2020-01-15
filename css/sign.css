@@ -1,4 +1,3 @@
-/* Start Register */
 /* Start Sign */
 .upper-bar .sign {
     min-width: 200px;
@@ -46,11 +45,18 @@
     transition: background-color .3s ease-in-out;
 }
 /* End Req Nav Button */
-/* Start Form */
+
+/* Start Sign In */
 form fieldset {
     border: 1px solid #DDD;
     padding: 30px 40px;
     margin-bottom: 20px;
+}
+form .form-logo {
+    width: 200px;
+}
+form .form-logo img {
+    width: 100%;
 }
 form .form-content {
     position: relative;
@@ -67,19 +73,12 @@ form .form-content .form-control:focus {
     border-color: #DDD;
     box-shadow: none;
 }
-form .form-content .form-control[readonly] {
-    background-color: #FFF!important;
-}
 form .form-content label {
     position: absolute;
     top: 14%;
     right: 0px;
     color: #999;
 }
-form .alert {
-    display: none;
-}
-
 form .form-content .form-border {
     position: absolute;
     bottom: 0;
@@ -89,49 +88,86 @@ form .form-content .form-border {
     background-color: var(--redColor);
     transition: width .3s ease-in-out;
 }
-form .form-content .icon {
-    position: absolute;
-    top: 14%;
-    left: 0;
-    color: var(--redColor);
-}
 form .submit,
 form .submit:focus {
     outline: none;
     border: none;
     box-shadow: none;
     background-color: #3ab54a;
-    color: #FFF;
+    color: #FFF!important;
     cursor: pointer;
+    margin-top: 15px;
+}
+@media (max-width: 768px) {
+    form .submit.sign-in {
+        margin-top: 10px;
+    }
+    form .submit.new-reg {
+        margin-top: 0;
+    }
+}
+
+form .submit.new-reg {
+    background-color: var(--mainColor);
 }
 form .submit:hover {
     transition: all .3s ease-in-out;
     background-color: var(--redColor);
 }
-
-/* End Form */
-/* DatePicker */
-.datepicker-container {
-    padding: 15px;
+form .rem-check {
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    -o-appearance: none!important;
+    appearance: none!important;
 }
-.datepicker-top-left, .datepicker-top-right {
-    border-color: transparent;
-    border-top-color: var(--redColor)!important;
+form .label-check {
+    position: relative;
+    margin-right: 20px;
+    user-select: none;
+    cursor: pointer;
+    color: var(--mainColor);
 }
-.datepicker-top-left:before {
-    border-bottom-color: var(--redColor)!important;
+form .label-check:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    height: 15px;
+    width: 15px;
+    background-color: #FFF;
+    border-radius: 3px;
+    border: 1px solid #999;
 }
-.datepicker-container .picked {
-    color: #FFF!important;
-    background-color: var(--mainColor)!important;
+form .rem-check:checked + .label-check:after {
+    font-family: 'fontAwesome';
+    content: '\f00c';
+    line-height: 1;
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    color: #FFF;
+    border-radius: 3px;
+    transition: all 1s ease-in-out;
 }
-.datepicker-container .highlighted {
-    color: #FFF!important;
-    background-color: var(--redColor)!important;
+form .forgot a {
+    color: var(--mainColor);
+    text-decoration: none;
 }
-
-.datepicker-panel > ul > li:hover {
-    color: #FFF!important;
-    background-color: var(--mainColor)!important;
+form .forgot a:hover {
+    transition: all .3s ease-in-out;
+    color: var(--redColor);
 }
-/* End Register */
+form .forgot span {
+    display: inline-block;
+}
+form .forgot .icon {
+    width: 23px;
+}
+form .forgot .icon img {
+    max-width: 100%;
+}
+/* End Sign In */

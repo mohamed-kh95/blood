@@ -1,0 +1,91 @@
+/* Start Sign */
+.upper-bar .sign {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto!important;
+}
+.upper-bar .sign .signin a,
+.upper-bar .sign .signup a {
+    color: #db9535;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.upper-bar .sign .signup:hover a,
+.upper-bar .sign .signin:hover a {
+    color: var(--redColor);
+    transition: color .3s ease-in-out;
+}
+/* End Sign */
+/* Start Req Nav Button */
+
+.navbar .req-nav-btn {
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+@media (max-width: 992px) {
+    .navbar .req-nav-btn {
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+}
+.navbar .req-nav-btn .nav-btn a {
+    background-color: var(--mainColor);
+    color: #FFF;
+    padding: 5px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar .req-nav-btn .nav-btn:hover a {
+    background-color: var(--redColor);
+    transition: background-color .3s ease-in-out;
+}
+/* End Req Nav Button */
+/* Start Details */
+._details-container {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+}
+._details ._details-info {
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    margin-bottom: 10px;
+}
+._details ._details-info .details-title {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 45%;
+}
+._details ._details-info .details-content {
+    padding: 10px;
+    color: #777;
+}
+._details ._details-btn a {
+    background-color: var(--mainColor);
+    color: #FFF;
+    padding: 10px 20px;
+}
+._details ._details-btn a:hover {
+    transition: all .3s ease-in-out;
+    background-color: var(--redColor);
+}
+._details .details-text {
+    padding: 10px;
+    border: 1px solid #DDD;
+    margin: 10px 0px;
+    line-height: 2;
+    color: #555;
+}
+._details .map iframe {
+    border: 1px solid #DDD;
+}
+/* End Details */

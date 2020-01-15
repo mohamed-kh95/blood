@@ -19,10 +19,8 @@
     <link rel="stylesheet" href="css/loading.css">
     <!-- Breadcrumb Style -->
     <link rel="stylesheet" href="css/breadcrumb.css">
-    <!-- Date Picker -->
-    <link rel="stylesheet" href="css/datepicker.min.css">
     <!-- Register Style -->
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/sign.css">
 </head>
 <body>
     <!-- Start Upper Bar -->
@@ -110,101 +108,71 @@
         <div class="container custom-padding">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-                <li class="breadcrumb-item active" aria-current="page">انشاء حساب جديد</li>
+                <li class="breadcrumb-item active" aria-current="page">تسجيل الدخول</li>
               </ol>
         </div>
-      </nav>
+    </nav>
     <!-- End Breadcrumb -->
-    <!-- Start Form -->
-    <form action="" autocomplete="off">
+    <!-- Start Sign In -->
+    <form action="" class="sign" autocomplete="off">
         <div class="container custom-padding">
             <fieldset>
                 <div class="row">
+                    <div class="form-group col-12">
+                        <div class="form-content form-logo m-auto">
+                            <img src="img/logos/logo.png" alt="">
+                        </div>
+                    </div>
                     <div class="form-group col-12 col-md-6">
                         <div class="form-content">
-                            <label for="name">الاسم</label>
-                            <input class="form-control" id="name" type="text">
+                            <label for="name">البريد \ الجوال</label>
+                            <input required class="form-control" id="name" type="email">
                             <span class="form-border" ></span>
                         </div>
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <div class="form-content">
-                            <label for="email">البريد الالكتروني</label>
-                            <input class="form-control" id="email" type="email">
+                            <label for="password">كلمه المرور</label>
+                            <input required class="form-control" id="password" type="password">
                             <span class="form-border" ></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="remember text-left">
+                            <input class="rem-check" id="check" type="checkbox">
+                            <label class="label-check" for="check">تذكرني</label>
+                            
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="forgot text-right">
+                            <a href="">
+                                <span class="icon">
+                                    <img src="img/sign/complain.png" alt="">
+                                </span>
+                                <span>هل نسيت كلمة المرور</span>
+                            </a>
                         </div>
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <div class="form-content">
-                            <label for="date">تاريخ الميلاد</label>
-                            <input type="text" readonly class="form-control" data-toggle="datepicker" id="date">
-                            <div class="icon"><i class="fa fa-calendar-alt"></i></div>
-                            <span class="form-border" ></span>
+                            
+                            <a class="d-block text-center  text-decoration-none form-control submit sign-in" href="">دخول</a>
+                            
                         </div>
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <div class="form-content">
-                            <label for="blood">فصيلة الدم</label>
-                            <input class="form-control" id="blood" type="text">
-                            <span class="form-border" ></span>
-                        </div>
-                    </div>
-                    <div class="form-group col-12 col-md-6">
-                        <div class="form-content">
-                            <label for="city">المحافظه</label>
-                            <input class="form-control" id="city" type="select">
-                            <span class="form-border" ></span>
-                        </div>
-                    </div>
-                    <div class="form-group col-12 col-md-6">
-                        <div class="form-content">
-                            <label for="city-val">المدينة</label>
-                            <input class="form-control" id="city-val" type="select">
-                            <span class="form-border" ></span>
-                        </div>
-                    </div>
-                    <div class="form-group col-12 col-md-6">
-                        <div class="form-content">
-                            <label for="mobile">رقم الهاتف</label>
-                            <input class="form-control mobile" id="mobile" type="select">
-                            <span class="form-border" ></span>
-                        </div>
-                    </div>
-                    <div class="form-group col-12 col-md-6">
-                        <div class="form-content">
-                            <label for="lastdate">اخر تاريخ تبرع</label>
-                            <input type="text" readonly class="form-control" data-toggle="datepicker" id="lastdate">
-                            <div class="icon"><i class="fa fa-calendar-alt"></i></div>
-                            <span class="form-border" ></span>
-                        </div>
-                    </div>
-                    <div class="form-group col-12 col-md-6">
-                        <div class="form-content">
-                            <label for="password">كلمة المرور</label>
-                            <input class="form-control" id="passowrd" type="password">
-                            <span class="form-border" ></span>
-                        </div>
-                    </div>
-                    <div class="form-group col-12 col-md-6">
-                        <div class="form-content">
-                            <label for="repassowrd">تأكيد كلمة المرور</label>
-                            <input class="form-control" id="repassowrd" type="password">
-                            <span class="form-border" ></span>
-                        </div>
-                    </div>
-                    <div class="col-6 m-auto form-group">
-                        <input class="form-control submit done" type="submit" value="انشاء">
-                    </div>
-                    <div class="col-12">
-                        <div class="mt-3 alert alert-danger alert-dismissible fade show" role="alert">
-                            <strong>خطاء</strong> برجاء ادخال جميع البيانات
+                            
+                            <a class="d-block text-center text-decoration-none form-control submit new-reg" href="register.html" >انشاء حساب جديد</a>
+                            
                         </div>
                     </div>
                 </div>
             </fieldset>
         </div>
     </form>
-    <!-- End Form -->
+    <!-- End Sign In -->
     <!-- Start Footer -->
     <footer>
         <div class="container">
@@ -285,9 +253,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/datepicker.min.js"></script>
     <script src="js/loading.js"></script>
-    <script src="js/date.js"></script>
     <script src="js/form.js"></script>
 </body>
 </html>

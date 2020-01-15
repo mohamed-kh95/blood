@@ -29,6 +29,7 @@
 @media (max-width: 992px) {
     .navbar .req-nav-btn {
         padding-bottom: 10px;
+        justify-content: flex-start;
     }
 }
 .navbar .req-nav-btn .nav-btn a {
