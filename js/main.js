@@ -1,7 +1,28 @@
 $(function () {
     // Header
     $('header').innerHeight($('.carousel').innerHeight() - 200);
-    
+    // Login Profile
+    $('.login-profile .profile-name .profile').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.login-profile .dropdown-login').fadeToggle(300)
+    });
+    $(window).on('click', function() {
+        if ($('.login-profile .dropdown-login').css('display', 'none')) {
+            false
+        } else {
+            $('.login-profile .dropdown-login').fadeOut(300);
+        }
+    });
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() >= 400) {
+            if ($('.login-profile .dropdown-login').css('display', 'none')) {
+                false
+            } else {
+                $('.login-profile .dropdown-login').fadeOut(300);
+            }
+        }
+    });
     // Owl Carousel
     $('.owl-carousel').owlCarousel({
         rtl:true,

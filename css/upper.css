@@ -3,6 +3,7 @@
     padding: 10px 0px;
     background-color: var(--mainColor);
     font-size: 13px;
+    overflow: visible;
 }
 
 .upper-bar .lang > span {
@@ -78,4 +79,79 @@
         border: none;
     }
 }
+/* Start Login Dropdown*/
+.login-profile .welcome ,
+.login-profile .profile-name {
+    padding-right: 10px;
+    font-size: 16px;
+}
+.login-profile .welcome {
+    color: #f8ad2e ;
+}
+.login-profile .profile-name {
+    color: #FFF;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.login-profile .profile-name:hover {
+    transition: all .3s ease-in-out;
+    color: var(--redColor);
+}
+.login-profile .profile-name .fa-chevron-down {
+    font-size: 13px;
+}
+.login-profile .dropdown-login {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #FFF;
+    z-index: 999;
+    min-width: 235px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px #333;
+    display: none;
+}
+.login-profile .dropdown-login:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid #FFF;
+}
+.login-profile .dropdown-login .log {
+    color: #2d2d2d;
+    padding: 10px 5px;
+    background-color: #FFF;
+    width: 100%;
+    display: block;
+    font-size: 17px;
+}
+.login-profile .dropdown-login .log {
+    color: #2d2d2d;
+    padding: 10px 5px;
+    background-color: #FFF;
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.login-profile .dropdown-login .fa,
+.login-profile .dropdown-login .fa-heart {
+    color: #a1a1a1;
+    margin-left: 5px;
+
+}
+.login-profile .dropdown-login .log:hover {
+    background-color: var(--mainColor);
+    color: #FFF!important;
+    transition: all .3s ease-in-out;
+}
+.login-profile .dropdown-login .log:hover i {
+    color: #FFF;
+}
+/* End Dropdown */
 /* End Upper Bar */

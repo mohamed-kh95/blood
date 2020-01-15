@@ -102,6 +102,7 @@
     position: relative;
     top: 20%;
     padding: 0px 15px;
+    font-size: 17px;
     color: #777;
     user-select: none;
     overflow: hidden;
@@ -124,6 +125,7 @@
 .req .blood-content .items {
     direction: ltr;
     z-index: 11;
+    text-align: left;
 }
 .req .city-content .items {
     z-index: 10;
@@ -133,7 +135,7 @@
     opacity: 0;
     display: none;
     position: relative;
-    top: 0;
+    top: 5px;
     background-color: #FFF;
     margin-top: 30px;
     border: 1px solid #DDD;
@@ -159,7 +161,7 @@
     cursor: pointer;
     user-select: none;
     font-size: 18px;
-    color: var(--mainColor);
+    color: #888;
 }
 .req .items .item:nth-of-type(odd) {
     background-color: #f9f9f9;
